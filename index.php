@@ -32,4 +32,52 @@
 		</div>
 	</div>
 
+	<div class="ctn-instagram">
+		<div class="siga">
+			<p>SIGA AS NOSSAS REDES</p>
+			<ul class="icones">
+				<li><a href=""><img src="img/icones/icon-facebook.png" alt=""></a></li>
+				<li><a href=""><img src="img/icones/icon-instagram.png" alt=""></a></li>
+				<li><a href=""><img src="img/icones/icon-twitter.png" alt=""></a></li>
+				<li><a href=""><img src="img/icones/icon-youtube.png" alt=""></a></li>
+			</ul>
+		</div>
+
+		<ul id="il" class="il"></ul>
+	</div>
+
+<script>
+    var feed = new Instafeed({
+      get: 'user',
+      userId: 27724738,
+      accessToken: '27724738.1677ed0.7e08341348ce453a8b29eeff18000e80',
+      target: 'il',
+      resolution: 'thumbnail',
+      limit: 10,
+      after: function() {
+      
+      	setTimeout(function(){
+          $('.il a').each(function(){
+            
+              $(this).attr('target', '_blank');
+
+              if( $(this).find('img').attr('src') != null ){
+                  var src = $(this).find('img').attr('src');
+                  var src = src.replace('150x150', '480x480');
+                  $(this).find('img').attr('src', src);
+              }else{
+              	console.log('Erro instagram.');
+              }
+          });
+        }, 500);
+    
+    }
+                             });
+
+    window.onload = function() {
+      feed.run();
+    };
+
+</script>
+
 <?php include('footer.php'); ?>

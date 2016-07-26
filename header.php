@@ -4,6 +4,9 @@
 	<title>Intuicion Deluxe</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script src="js/instagram.js"></script>
 </head>
 <body>
 
@@ -16,10 +19,10 @@
 
 		<div class="content">
 			<div class="main">
-				<div class="logo"><a href=""><img src="img/logo.png" alt=""></a></div>
+				<div class="logo"><a href="index.php"><img src="img/logo.png" alt=""></a></div>
 				<nav>
 					<ul class="nav-menu">
-						<li><a href="">A EMPRESA</a></li>
+						<li><a href="page-empresa.php">A EMPRESA</a></li>
 						<li><a href="">NOSSAS LOJAS</a></li>
 						<li><a href="">CAMPANHA</a></li>
 						<li><a href="">FILME</a></li>
