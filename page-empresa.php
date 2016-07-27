@@ -32,6 +32,52 @@
 			<div class="cb"></div>
 		</div>
 
+		<div class="main">
+			<h2>NOSSA LINHA DO TEMPO</h2>
+		</div>
+
+		<div class="timeline">
+			<div class="main">
+				<ul class="linha">
+					<li>
+						<div class="ano">2015</div>
+						<div class="texto">
+							<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.</p>
+						</div>
+					</li>
+					<li>
+						<div class="ano">2014</div>
+						<div class="texto">
+							<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.</p>
+						</div>
+					</li>
+					<li>
+						<div class="ano">2013</div>
+						<div class="texto">
+							<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.</p>
+						</div>
+					</li>
+					<li>
+						<div class="ano">2012</div>
+						<div class="texto">
+							<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.</p>
+						</div>
+					</li>
+					<li>
+						<div class="ano">2011</div>
+						<div class="texto">
+							<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+							<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.</p>
+						</div>
+					</li>
+				</ul>
+			</div>				
+		</div>
+
 	</main>
 
 <?php include('footer.php'); ?>

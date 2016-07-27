@@ -24,9 +24,9 @@
 					<ul class="nav-menu">
 						<li><a href="page-empresa.php">A EMPRESA</a></li>
 						<li><a href="">NOSSAS LOJAS</a></li>
-						<li><a href="">CAMPANHA</a></li>
-						<li><a href="">FILME</a></li>
-						<li><a href="">CLIPPING</a></li>
+						<li><a href="page-campanha.php">CAMPANHA</a></li>
+						<li><a href="page-filme.php">FILME</a></li>
+						<li><a href="page-clipping.php">CLIPPING</a></li>
 						<li><a href="">SEJA REVENDEDOR(A)</a></li>
 						<li><a href="">LOJA ONLINE</a></li>
 					</ul>
