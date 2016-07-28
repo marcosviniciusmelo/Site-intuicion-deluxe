@@ -494,6 +494,44 @@ main.empresa{
 
 }
 
+.slick-arrow{
+	position: absolute;
+	top: 43%;
+	z-index: 3;
+	width: 35px;
+	height: 40px;
+	background: url('../img/arrow.png');
+	border: 0px;
+	color: #fff;
+	font-size: 1px;
+	cursor: pointer;
+	@extend %transition;
+
+	&:active, &:hover{
+		outline: none;
+	}
+}
+
+.slick-prev{
+	left: 20px;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	writing-mode: lr-tb;
+
+	&:hover{
+		margin-left: -2px;
+	}
+}
+
+.slick-next{
+	right: 20px;
+
+	&:hover{
+		margin-right: -2px;
+	}
+}
+
 
 /* ====== CAMPANHA ====== */
 
@@ -518,7 +556,7 @@ main.campanha{
 			background-size: contain !important;
 			background-repeat: no-repeat !important;
 			background-position: center !important;
-			background-color: #f2f2f2 !important;
+			background-color: #222 !important;
 		}
 	}
 
@@ -537,6 +575,10 @@ main.campanha{
 			margin-right: 10px;
 			margin-bottom: 10px;
 		}
+	}
+
+	.slick-dots{
+		display: none !important;
 	}
 
 	.title-line{
@@ -763,6 +805,57 @@ main.campanha{
 	box-sizing: border-box;
 	margin-top: 30px;
 	background-color: #f9f9f9;
+
+	.search{
+		width: 100%;
+
+		input{
+			width: calc(100% - 52px);
+			float: left;
+			padding: 10px;
+			font-size: 16px;
+			box-sizing: border-box;
+			border: 1px solid #222;
+		}
+
+		button{
+			width: 52px;
+			float: left;
+			background-color: #ed0059;
+			border: 0px;
+			height: 40px;
+		}
+	}
+
+	.posts-recents{
+		width: 100%;
+		display: inline-block;
+		margin-top: 40px;
+
+		li{
+			width: 100%;
+			display: inline-block;
+			margin-bottom: 30px;
+
+			.foto{
+				width: 90px;
+				float: left;
+
+				img{
+					width: 100%;
+				}
+			}
+
+			.left{
+				width: calc(100% - 100px);
+				float: right;
+
+				.data{
+					font-size: 12px;
+				}
+			}
+		}
+	}
 }
 
 footer{

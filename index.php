@@ -3,6 +3,8 @@
 	<div class="banner-home">
 		<ul>
 			<li><a href=""><img src="img/banner-home.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/banner-home.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/banner-home.jpg" alt=""></a></li>
 		</ul>
 	</div>
 

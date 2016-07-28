@@ -55,8 +55,10 @@
 
 			<div class="sidebar">
 				<div class="search">
-					<input type="text" name="busca" placeholder="Buscar">
-					<button type="submit"><img src="img/icones/lupa.png" alt=""></button>
+					<form action="" method="get">
+						<input type="text" name="busca" placeholder="Buscar">
+						<button type="submit"><img src="img/icones/lupa.png" alt=""></button>
+					</form>
 				</div>
 
 				<ul class="posts-recents">
