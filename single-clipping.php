@@ -51,21 +51,8 @@
 					</li>
 				</ul>
 			</div>
-			
+
 			<ul class="coll-main">
-				<li class="post">
-					<div class="thumbnail"><img src="img/img-fake-2.jpg" alt=""></div>
-					<div class="ctn">
-						<span class="data">8 de Junho de 2016</span>
-						<h2 class="titulo">TITULO DA NOTÍCIA</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.</p>
-						<a class="btn-ver" href="single-clipping.php">VER NOTÍCIA</a>
-					</div>
-				</li>
 
 				<li class="post">
 					<div class="thumbnail"><img src="img/img-fake-2.jpg" alt=""></div>
@@ -77,23 +64,15 @@
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur.</p>
-						<a class="btn-ver" href="single-clipping.php">VER NOTÍCIA</a>
-					</div>
-				</li>
 
-				<li class="post">
-					<div class="thumbnail"><img src="img/img-fake-2.jpg" alt=""></div>
-					<div class="ctn">
-						<span class="data">8 de Junho de 2016</span>
-						<h2 class="titulo">TITULO DA NOTÍCIA</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur.</p>
-						<a class="btn-ver" href="single-clipping.php">VER NOTÍCIA</a>
 					</div>
 				</li>
+
 			</ul>
 
 			<div class="cb"></div>

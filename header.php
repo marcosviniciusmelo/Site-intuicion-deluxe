@@ -2,10 +2,12 @@
 <html>
 <head>
 	<title>Intuicion Deluxe</title>
+	<meta charset="utf8"/>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-
+	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
 	<script src="js/instagram.js"></script>
 </head>
@@ -28,9 +30,10 @@
 						<li><a href="page-campanha.php">CAMPANHA</a></li>
 						<li><a href="page-filme.php">FILME</a></li>
 						<li><a href="page-clipping.php">CLIPPING</a></li>
-						<li><a href="">SEJA REVENDEDOR(A)</a></li>
+						<li><a href="page-seja-revendedora.php">SEJA REVENDEDOR(A)</a></li>
 						<li><a href="">LOJA ONLINE</a></li>
 					</ul>
+					<div class="icon-menu"><img src="img/icones/icon-menu.png" alt=""></div>
 				</nav>
 			</div>
 		</div>
