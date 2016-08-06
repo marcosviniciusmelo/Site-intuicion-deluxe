@@ -65,3 +65,34 @@ function _theme_post_type_campanha()
     );
 }
 add_action('init', '_theme_post_type_campanha');
+
+
+function _theme_post_type_filme()
+{
+    $labels = array(
+		'name'                => ( 'Filmes'),
+		'singular_name'       => ( 'Filme'),
+		'menu_name'           => ( 'Filmes'),
+		'parent_item_colon'   => ( 'Parent'),
+		'all_items'           => ( 'Todos'),
+		'view_item'           => ( 'Visualizar'),
+		'add_new_item'        => ( 'Adicionar Nova'),
+		'add_new'             => ( 'Adicionar'),
+		'edit_item'           => ( 'Editar'),
+		'update_item'         => ( 'Atualizar'),
+		'search_items'        => ( 'Pesquisar'),
+		'not_found'           => ( 'Registro não encontrado'),
+		'not_found_in_trash'  => ( 'Nenhum registro encontrado na lixeira')
+    );
+
+    register_post_type( 'post_filme',
+        array(
+            'menu_icon'   => 'dashicons-video-alt3',
+            'labels'      => $labels,
+            'public'      => true,
+            'has_archive' => true,
+            'supports'    => array( 'title', 'editor', 'thumbnail')
+        )
+    );
+}
+add_action('init', '_theme_post_type_filme');

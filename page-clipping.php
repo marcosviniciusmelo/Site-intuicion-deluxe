@@ -1,17 +1,23 @@
-<?php include('header.php'); ?>
+<?php  
+/*
+ * Template Name: Clipping
+ */
+?>
+
+<?php get_header(); the_post(); ?>
 
 	<main class="campanha">
 		
 		<div class="breadcrumb">
-			<h3>CLIPPING</h3>
-			<span>HOME / CLIPPING</span>
+			<h3><?php the_title(); ?></h3>
+			<span>HOME / <?php the_title(); ?></span>
 		</div>
 
 		<div class="main">
 			
 			<ul class="coll-main">
 				<li class="post">
-					<div class="thumbnail"><img src="img/img-fake-2.jpg" alt=""></div>
+					<div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-2.jpg" alt=""></div>
 					<div class="ctn">
 						<span class="data">8 de Junho de 2016</span>
 						<h2 class="titulo">TITULO DA NOTÍCIA</h2>
@@ -25,7 +31,7 @@
 				</li>
 
 				<li class="post">
-					<div class="thumbnail"><img src="img/img-fake-2.jpg" alt=""></div>
+					<div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-2.jpg" alt=""></div>
 					<div class="ctn">
 						<span class="data">8 de Junho de 2016</span>
 						<h2 class="titulo">TITULO DA NOTÍCIA</h2>
@@ -39,7 +45,7 @@
 				</li>
 
 				<li class="post">
-					<div class="thumbnail"><img src="img/img-fake-2.jpg" alt=""></div>
+					<div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-2.jpg" alt=""></div>
 					<div class="ctn">
 						<span class="data">8 de Junho de 2016</span>
 						<h2 class="titulo">TITULO DA NOTÍCIA</h2>
@@ -57,13 +63,13 @@
 				<div class="search">
 					<form action="" method="get">
 						<input type="text" name="busca" placeholder="Buscar">
-						<button type="submit"><img src="img/icones/lupa.png" alt=""></button>
+						<button type="submit"><img src="<?php echo get_template_directory_uri(); ?>/img/icones/lupa.png" alt=""></button>
 					</form>
 				</div>
 
 				<ul class="posts-recents">
 					<li>
-						<div class="foto"><img src="img/img-fake-3.jpg" alt=""></div>
+						<div class="foto"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-3.jpg" alt=""></div>
 						<div class="left">
 							<h4>Nome da notícia</h4>
 							<span class="data">20 de Junho 2016</span>
@@ -71,7 +77,7 @@
 					</li>
 
 					<li>
-						<div class="foto"><img src="img/img-fake-3.jpg" alt=""></div>
+						<div class="foto"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-3.jpg" alt=""></div>
 						<div class="left">
 							<h4>Nome da notícia</h4>
 							<span class="data">20 de Junho 2016</span>
@@ -79,7 +85,7 @@
 					</li>
 
 					<li>
-						<div class="foto"><img src="img/img-fake-3.jpg" alt=""></div>
+						<div class="foto"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-3.jpg" alt=""></div>
 						<div class="left">
 							<h4>Nome da notícia</h4>
 							<span class="data">20 de Junho 2016</span>
@@ -87,7 +93,7 @@
 					</li>
 
 					<li>
-						<div class="foto"><img src="img/img-fake-3.jpg" alt=""></div>
+						<div class="foto"><img src="<?php echo get_template_directory_uri(); ?>/img/img-fake-3.jpg" alt=""></div>
 						<div class="left">
 							<h4>Nome da notícia</h4>
 							<span class="data">20 de Junho 2016</span>
@@ -102,4 +108,4 @@
 
 	</main>
 
-<?php include('footer.php'); ?>
+<?php get_footer(); ?>
