@@ -60,7 +60,8 @@ function _theme_post_type_campanha()
             'labels'      => $labels,
             'public'      => true,
             'has_archive' => true,
-            'supports'    => array( 'title', 'editor', 'thumbnail')
+            'supports'    => array( 'title', 'editor', 'thumbnail'),
+            'rewrite' => array('slug'=>'campanha'),
         )
     );
 }

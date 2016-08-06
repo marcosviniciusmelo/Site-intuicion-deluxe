@@ -97,10 +97,12 @@ function _theme_resume_post($words = 40, $echo = TRUE, $id_post = 0)
  * @param string $search
  * @return string $retorno
  */
-function _theme_show_pagination($type = 'post', $search = NULL)
+function _theme_show_pagination($type = 'post', $search = NULL, $categoria = NULL)
 {
     if (!is_null($search)) {
         $loop = new WP_Query(array('s' => $search));
+    }elseif (!is_null($categoria)) {
+        $loop = new WP_Query(array('post_type' => $type, 'cat' => $categoria));
     }else{
         $loop = new WP_Query(array('post_type' => $type));
     }

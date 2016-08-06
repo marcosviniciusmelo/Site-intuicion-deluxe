@@ -45,7 +45,7 @@
 			<div class="title-line"><span>CAMPANHAS ANTERIORES</span></div>
 
 			<ul class="grid-anteriores">
-				<?php $query = new WP_Query( array( 'post_type' => 'post_campanha', 'offset' => 1)); ?>
+				<?php $query = new WP_Query( array( 'post_type' => 'post_campanha', 'offset' => 1, 'posts_per_page' => 99)); ?>
 	            <?php while($query->have_posts()) : $query->the_post(); ?>
 	            	<?php $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) ); ?>
 					<li style="background: url(<?php echo $url; ?>);"><a href="<?php the_permalink(); ?>"></a><span class="titulo"><?php the_title(); ?></span></li>

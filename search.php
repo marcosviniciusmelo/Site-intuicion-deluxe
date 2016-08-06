@@ -4,7 +4,7 @@
  */
 ?>
 
-<?php get_header(); the_post(); ?>
+<?php get_header(); ?>
 
 	<main class="campanha">
 		
@@ -14,11 +14,11 @@
 		</div>
 
 		<div class="main">
+
+			<h3>Você pesquisou por: "<?php echo $_GET['s'] ?>"</h3>
 			
 			<ul class="coll-main">
-				<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-				<?php $query = new WP_Query(array('post_type' => 'post', 'paged' => $paged)); ?>
-				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<li class="post">
 						<div class="thumbnail">
 							<?php the_post_thumbnail(); ?>
@@ -33,8 +33,8 @@
 
 				<?php endwhile; ?> 
 
-				<?php _theme_show_pagination('post'); ?>
-				
+				<?php _theme_show_pagination('post', $_GET['s']); ?>
+
 				<?php else : ?>
 					<p><?php _e('Nenhuma notícia cadastrada!'); ?></p>
 				<?php endif; ?>
