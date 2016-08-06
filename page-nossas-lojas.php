@@ -1,10 +1,16 @@
-<?php include('header.php'); ?>
+<?php  
+/*
+ * Template Name: Nossas Lojas
+ */
+?>
+
+<?php get_header(); the_post(); ?>
 
 	<main class="campanha">
 		
 		<div class="breadcrumb">
-			<h3>NOSSAS LOJAS</h3>
-			<span>HOME / NOSSAS LOJAS</span>
+			<h3><?php the_title(); ?></h3>
+			<span>HOME / <?php the_title(); ?></span>
 		</div>
 
 		<div class="main">
@@ -15,4 +21,4 @@
 
 	</main>
 
-<?php include('footer.php'); ?>
+<?php get_footer(); ?>
