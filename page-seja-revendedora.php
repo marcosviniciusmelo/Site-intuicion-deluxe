@@ -1,6 +1,7 @@
 <?php include('header.php'); ?>
 
 	<main class="empresa">
+	
 		
 		<div class="breadcrumb">
 			<h3>SEJA REVENDEDOR(A)</h3>
