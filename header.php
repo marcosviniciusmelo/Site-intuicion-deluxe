@@ -14,13 +14,13 @@
 		<header>
 			<div class="bar-top">
 				<div class="main">
-					<a href="">ESPAÇO DA REVENDEDORA</a>
+					<a href="<?php echo home_url(); ?>">ESPAÇO DA REVENDEDORA</a>
 				</div>
 			</div>
 
 			<div class="content">
 				<div class="main">
-					<div class="logo"><a href="index.php"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a></div>
+					<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a></div>
 					<nav>
 						<?php echo _theme_show_menu('primary'); ?>
 					</nav>
