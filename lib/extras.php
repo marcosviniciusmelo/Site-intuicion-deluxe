@@ -164,3 +164,14 @@ function _theme_show_menu($name_menu = 'primary')
 
     return $output;
 }
+
+
+function my_acf_google_map_api( $api ){
+    
+    $api['key'] = 'AIzaSyBnqxaud76LltauPZpxnXiLOHB_G3adfcc';
+    
+    return $api;
+    
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

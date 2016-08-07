@@ -24,3 +24,25 @@ $(document).ready(function(){
     });
 
 });
+
+
+//Click expand
+$('main.lojas .ctn-lojas li .topo').click(function(){
+	var ID = $(this).parent().attr('class');
+	if( ID == 'close' ){
+		$('main.lojas .ctn-lojas > li').find('.ctn').css({'padding': '0px', 'height': '0px', 'opacity': '0'});
+		$('main.lojas .ctn-lojas > li').attr('class', 'close');
+
+		$(this).parent().find('.ctn').css({'padding': '20px', 'height': 'auto', 'opacity': '1'});
+		$(this).parent().attr('class', 'open');
+	}else{
+		$(this).parent().find('.ctn').css({'padding': '0px', 'height': '0px', 'opacity': '0'});
+		$(this).parent().attr('class', 'close');
+	}
+});
+
+
+//Menu
+$('header .content nav .icon-menu').click(function(){
+	$('header .content nav ul').toggle();
+});

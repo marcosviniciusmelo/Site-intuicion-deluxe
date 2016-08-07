@@ -30,7 +30,7 @@ a { text-decoration: none; cursor: pointer; }
 ul,li { list-style: none; @extend %transition; }
 .main { width: $largura; margin: 0 auto; position: relative !important; }
 
-a, ul{ @extend %transition;}
+a, ul, li{ @extend %transition;}
 .cb { clear: both; }
 .fl	{ float: left; }
 .fr { float: right; }
@@ -51,6 +51,10 @@ summary {
 
 header {
 	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 8;
 
 	.bar-top {
 		width: 100%;
@@ -59,6 +63,7 @@ header {
 		color: #FFF;
 		display: inline-block;
 		box-sizing: border-box;
+		margin-bottom: -4px;
 
 		a {
 			float: right;
@@ -110,10 +115,18 @@ header {
 				.active {
 					font-weight: bolder;
 				}
+			}
 
+			.icon-menu{
+				display: none;
 			}
 		}
 	}
+}
+
+main{
+	margin-top: 81px;
+	min-height: calc(100vh - 166px);
 }
 
 .banner-home {
@@ -503,7 +516,7 @@ main.empresa{
 	background: url('../img/arrow.png');
 	border: 0px;
 	color: #fff;
-	font-size: 1px;
+	font-size: 0px;
 	cursor: pointer;
 	@extend %transition;
 
@@ -574,6 +587,11 @@ main.campanha{
 			background-position: center !important;
 			margin-right: 10px;
 			margin-bottom: 10px;
+			cursor: pointer;
+
+			&:hover{
+				opacity: 0.8;
+			}
 		}
 	}
 
@@ -691,7 +709,6 @@ main.campanha{
 			margin-top: 10px;
 			background-size: cover !important;
 			background-position: center !important;
-			display: table;
 			text-align: center;
 			position: relative;
 			@extend %transition;
@@ -713,6 +730,7 @@ main.campanha{
 				height: 100%;
 				display: block;
 				position: absolute;
+				display: table;
 				z-index: 3;
 			}
 
@@ -783,6 +801,10 @@ main.campanha{
 				color: #000;
 				text-transform: uppercase;
 				margin: 5px 0px;
+			}
+
+			p{
+				margin: 15px 0px;
 			}
 
 			.btn-ver{
@@ -858,19 +880,216 @@ main.campanha{
 	}
 }
 
+/* NOSSAS LOJAS */
+main.lojas{
+	.ctn-lojas{
+		width: 800px;
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+
+		li{
+			width: 100%;
+
+			.topo{
+				width: 100%;
+				padding: 10px;
+				box-sizing: border-box;
+				font-size: 20px;
+				border-bottom: 1px solid #000;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+
+				&:after{
+					content: '';
+					width: 23px;
+					height: 23px;
+					background: url(../img/icones/icon-arrow.png) no-repeat;
+					float: right;
+					margin-top: 6px;
+				}
+			}
+
+			.ctn{
+				width: 100%;
+				background-color: #f9f9f9;
+				box-sizing: border-box;
+				overflow: hidden;
+				height: 0px;
+				@extend %transition;
+
+				.endereco{
+					width: 100%;
+					display: inline-block;
+					margin-bottom: 10px;
+				}
+
+				.mapa{
+					width: 100%;
+					height: 180px;
+					background-color: #ccc;
+				}
+			}
+		}
+
+		.open{
+
+			.topo:after{
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				writing-mode: lr-tb;
+				margin-top: 0px !important;
+			}
+		}
+	}
+}
+
 footer{
 	width: 100%;
 	padding: 15px 0px;
 	box-sizing: border-box;
 	background-color: #000;
 	color: #fff;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 @media only screen and ( max-width: 1200px ) {
 
 	.main {
 		width: 95%;
+	}
+
+}
+
+@media only screen and ( max-width: 1000px ) {
+
+	header .content nav ul{
+		width: 290px;
+	    position: fixed;
+	    top: 81px;
+		right: 0px;
+		height: calc(100% - 81px);
+		background-color: #222;
+		display: none;
+		z-index: 9;
+		padding: 20px;
+		box-sizing: border-box;
+
+		li{
+			width: 100%;
+			display: inline-block;
+			margin-left: 0px;
+			margin: 8px 0px;
+			font-size: 17px;
+
+			a{
+				color: #fff;
+			}
+		}
+	}
+
+	header .content nav .icon-menu{
+		display: block;
+		float: right;
+		margin-right: 10px;
+		margin-top: -3px;
+		width: 40px;
+		cursor: pointer;
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and ( max-width: 600px ) {
+
+	.box-home li{
+		width: 100%;
+		height: 200px;
+	}
+
+	.box-gray .ctn-empresa-home .foto{
+		display: none;
+	}
+
+	.box-gray .ctn-empresa-home .texto{
+		width: 100%;
+	}
+
+	.box-video-home .ctn{
+		width: 90%;
+	}
+
+	.box-video-home .ctn .ctn-iframe iframe{
+		height: 180px;
+	}
+
+	.ctn-instagram .il a{
+		width: 33.3%;
+	}
+
+	main.empresa .box-01 .foto-box{
+		display: none;
+	}
+
+	main.empresa .box-01 .texto{
+		width: 100%;
+	}
+
+	main.empresa .ctn-video iframe{
+		width: 95%;
+		height: 180px;
+	}
+
+	main.empresa .ctn-historico{
+		width: 80%;
+		margin-top: 20px;
+	}
+
+	main.lojas .ctn-lojas{
+		width: 90%;
+	}
+
+	main.campanha .slider li{
+		height: 215px;
+	}
+
+	main.campanha .thumbnails{
+		display: none;
+	}
+
+	main.campanha .grid-anteriores li, main.campanha .filme-anteriores li{
+		width: calc(50% - 10px) !important;
+		height: 120px;
+	}
+
+	main.campanha .filme iframe{
+		height: 200px;
+	}
+
+	main.campanha .filme-anteriores li .titulo{
+		font-size: 14px;
+		opacity: 1;
+		padding-top: 0px;
+	}
+
+	main.campanha .filme-anteriores li:after{
+		opacity: 0.4;
+	}
+
+	.sidebar{
+		width: 100%;
+	}
+
+	.coll-main{
+		width: 100%;
+	}
+
+	.sidebar .posts-recents{
+		display: none;
 	}
 
 }

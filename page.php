@@ -1,9 +1,3 @@
-<?php  
-/*
- * Template Name: Nossas Lojas
- */
-?>
-
 <?php get_header(); the_post(); ?>
 
 	<main class="campanha">
